@@ -34,3 +34,22 @@ cursor.style.background="transparent";
 
 
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const faqButtons = document.querySelectorAll(".faq-btn");
+
+  faqButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const parentRow = btn.closest(".faq-row");
+
+      // Close all other rows
+      document.querySelectorAll(".faq-row").forEach((row) => {
+        if (row !== parentRow) {
+          row.classList.remove("active");
+        }
+      });
+
+      // Toggle current row
+      parentRow.classList.toggle("active");
+    });
+  });
+});
