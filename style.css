@@ -281,3 +281,38 @@ font-weight:bold;
 font-size:20px;
 
 }
+.pricing {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.pricing h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.price-card {
+    background: #111;
+    color: white;
+    width: 180px;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #333;
+}
+
+.price-card h3 {
+    font-size: 20px;
+}
+
+.price-card p {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0 0;
+}
